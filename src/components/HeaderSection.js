@@ -127,9 +127,9 @@ const HeaderSection = () => {
                   src={Device}
                   alt="CapnoTrainer Device"
                   style={{
-                    width: "100%",
-                    maxWidth: "300px",
-                    height: "auto",
+                    width:'auto',
+                    maxWidth: "400px",
+                    height: {xs:'100%', sm:'340px', md:'380px'},
                   }}
                 />
               </Box>
