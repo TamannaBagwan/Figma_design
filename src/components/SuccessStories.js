@@ -22,7 +22,7 @@ const SuccessStories = () => {
   ];
 
   return (
-    <Box sx={{ position: "relative", height: "400px", width: "100%",backgroundColor:'rgba(230, 242, 242, 1)' }}>
+    <Box sx={{ position: "relative", height: {xs:'700px',sm:'620px',md:'400px'}, width: "100%",backgroundColor:'rgba(230, 242, 242, 1)' }}>
       <Container>
         <Typography
           sx={{
