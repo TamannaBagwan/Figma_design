@@ -37,42 +37,39 @@ const CapnoTrainerFeatures = () => {
     <Box
       sx={{
         margin: "0 auto",
-        padding: "2rem 2rem",
         backgroundColor: "#f5f9fa",
-        marginTop:{xs:'350px',sm:'350px',md:'300px'} ,
-       
+        marginTop: { xs: "350px", sm: "350px", md: "300px" },
+        padding: { xs: "10px", sm: "10px", md: "130px" },
       }}
     >
-      <Box sx={{width:'100%',display:'flex',justifyContent:'center'}}>
-      <Box sx={{display:'flex',justifyContent:'flex-start'}}>
-
-      
-      <Typography
-        variant="h2"
-        sx={{
-          color: "rgba(0, 128, 128, 1)",
-          fontSize: "40px",
-          lineHeight: 1.2,
-          mb: 3,
-          fontWeight: 700,
-          fontFamily: "'Spectral SC', serif",
-        }}
-      >
-        <Box
-          component="span"
-          sx={{
-            color: "rgba(16, 16, 16, 1)",
-            display: "block",
-            fontSize: "17px",
-            fontWeight: 700,
-            mb: 0.5,
-          }}
-        >
-          Experience the
+      <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
+        <Box sx={{ display: "flex", justifyContent: "flex-start" }}>
+          <Typography
+            variant="h2"
+            sx={{
+              color: "rgba(0, 128, 128, 1)",
+              fontSize: "40px",
+              lineHeight: 1.2,
+              mb: 3,
+              fontWeight: 700,
+              fontFamily: "'Spectral SC', serif",
+            }}
+          >
+            <Box
+              component="span"
+              sx={{
+                color: "rgba(16, 16, 16, 1)",
+                display: "block",
+                fontSize: "17px",
+                fontWeight: 700,
+                mb: 0.5,
+              }}
+            >
+              Experience the
+            </Box>
+            Power of CapnoTrainer® GO
+          </Typography>
         </Box>
-        Power of CapnoTrainer® GO
-      </Typography>
-      </Box>
       </Box>
       <Grid container spacing={5}>
         {features.map((feature, index) => (
@@ -82,7 +79,6 @@ const CapnoTrainerFeatures = () => {
                 borderRadius: "12px",
                 boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
                 height: "367px",
-              
               }}
             >
               <CardMedia

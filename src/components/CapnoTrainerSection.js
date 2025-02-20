@@ -12,7 +12,7 @@ const listItems = [
 
 const CapnoTrainerSection = () => {
   return (
-    <Container sx={{ mt: 4, mb: 5, height: "340px" }}>
+    <Container sx={{ mt: '100px', mb: 5, height: "340px" }}>
       <Grid container spacing={7} alignItems="center">
         <Grid item xs={12} md={5}>
           <Box>
@@ -90,7 +90,6 @@ const CapnoTrainerSection = () => {
                 left: "50%",
                 transform: "translateX(-50%)",
                 zIndex: 3,
-              
               }}
             >
               {listItems.map((item, index) => (

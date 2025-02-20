@@ -16,7 +16,7 @@ import TwoColumnSection from "./components/TwoColumnSection";
 
 function App() {
   return (
-    <div>
+    <>
       <HeaderSection />
       <Brands />
       <BreathingSection />
@@ -32,7 +32,7 @@ function App() {
       <FAQ />
       <PromotionalBanner />
       <Footer />
-    </div>
+    </>
   );
 }
 

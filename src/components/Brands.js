@@ -9,19 +9,21 @@ import Conspire from "../assets/images/conspire.png";
 const Brands = () => {
   return (
     <Box sx={{ margin: "10px 30px", padding: "10px 40px" }}>
-      <Grid container spacing={8} justifyContent="center" alignItems="center">
-        <Grid item xs={12} sm={6} md={3}>
-          <img src={Knosis} width="218px" height="158px" alt="Knosis" />
-        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <img src={DrCruz} width="126px" height="126px" alt="DrCruz" />
-        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <img src={Airway} width="197px" height="93px" alt="Airway" />
-        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <img src={Conspire} width="248px" height="81px" alt="Conspire" />
-        </Grid>
+      <Grid container spacing={4} justifyContent="center">
+        {[Knosis, DrCruz, Airway, Conspire].map((brand, index) => (
+          <Grid key={index} item xs={12} sm={6} md={3} display="flex" justifyContent="center">
+            <Box
+              component="img"
+              src={brand}
+              alt={`Brand-${index}`}
+              sx={{
+                width: { xs: "85%", sm: "85%", md: "55%" },
+                height: {xs:'95px',sm:'150px'  , md: '80px'}, 
+                padding:'40px'
+              }}
+            />
+          </Grid>
+        ))}
       </Grid>
     </Box>
   );

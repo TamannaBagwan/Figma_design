@@ -5,12 +5,13 @@ import Device from "../assets/images/device.png";
 
 const HeaderSection = () => {
   return (
-    <Box>
+    <>
       <Box
         sx={{
-          background: "linear-gradient(135deg,#6BB5B5,#008080)",
-          height: { xs: "auto", sm: "auto", md: "440px" },
-          overflow: "hidden",
+          background:
+            "linear-gradient(180deg, rgba(107, 181, 181, 1), rgba(0, 128, 128, 1))",
+          minHeight: { xs: "auto", sm: "auto", md: "520px" },
+          padding: { xs: "10px", sm: "20px", md: "10px 10px 35px 10px" },
         }}
       >
         <Box
@@ -18,7 +19,7 @@ const HeaderSection = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            flexDirection: { xs: "column", md: "row" },
+            flexDirection: { xs: "column", sm: "row", md: "row" },
             padding: { xs: "10px 20px", md: "20px 40px" },
           }}
         >
@@ -30,7 +31,7 @@ const HeaderSection = () => {
               height: "58px",
               width: "260px",
               mb: { xs: 2, md: 0 },
-              marginLeft: { xs: "0", md: "40px" },
+              ml: { md: "40px" },
             }}
           />
 
@@ -54,88 +55,82 @@ const HeaderSection = () => {
           </Button>
         </Box>
 
-        <Box>
-          <Grid container>
-            <Grid item xs={12}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={12} md={10}>
+            <Typography
+              sx={{
+                fontWeight: 700,
+                fontSize: { xs: "28px", sm: "40px", md: "40px" },
+                lineHeight: 1.2,
+                fontFamily: "'Spectral SC', serif",
+                color: "#fff",
+                textAlign: { xs: "center", sm: "center", md: "left" },
+                marginLeft: { xs: " 10px", sm: "10px", md: "40px" },
+                p: { xs: "20px", sm: "10px", md: "5px 20px 15px 45px" },
+              }}
+            >
+              Transform Your Life with the Revolutionary CapnoTrainer® GO
+            </Typography>
+          </Grid>
+
+          <Grid item xs={12} md={6}>
+            <Box sx={{ borderRadius: "8px", textAlign: "left", color: "#fff" }}>
               <Typography
                 sx={{
                   fontWeight: 700,
-                  fontSize: { xs: "28px", sm: "32px", md: "40px" },
-                  lineHeight: 1.2,
-                  mb: 2,
-                  fontFamily: "'Spectral SC', serif",
-                  color: "#fff",
+                  fontSize: { xs: "22px", sm: "34px", md: "36px" },
+                  m: { xs: "5px 20px", sm: "30px 40px", md: "5px 40px" },
                   textAlign: { xs: "center", md: "left" },
-                  margin: { xs: "15px 20px", md: "15px 40px" },
+                  pl:{ md:"50px" },  
                 }}
               >
-                Transform Your Life with the Revolutionary CapnoTrainer® GO
+                Breathe Smarter, Live Better
               </Typography>
-            </Grid>
 
-            <Grid item xs={12} md={6}>
-              <Box
+              <Typography
                 sx={{
-                  borderRadius: "8px",
-                  textAlign: "left",
-                  color: "#fff",
+                  fontSize: { xs: "14px", sm: "18px", md: "17px" },
+                  lineHeight: 1.6,
+                  mb: 4,
+                  fontWeight: 400,
+                  textAlign: { xs: "center", md: "left" },
+                  marginLeft: { xs: " 10px", sm: "10px", md: "40px" },
+                  p: { xs: "20px", sm: "10px", md: "5px 20px 15px 45px" },
                 }}
               >
-                <Typography
-                  sx={{
-                    fontWeight: 700,
-                    fontSize: { xs: "22px", sm: "24px", md: "36px" },
-                    margin: { xs: "5px 20px", md: "5px 40px" },
-                    textAlign: { xs: "center", md: "left" },
-                  }}
-                >
-                  Breathe Smarter, Live Better
-                </Typography>
-
-                <Typography
-                  sx={{
-                    fontSize: { xs: "14px", sm: "16px" },
-                    lineHeight: 1.6,
-                    mb: 4,
-                    fontWeight: 400,
-                    padding: { xs: "0px 20px", md: "0px 40px" },
-                    textAlign: { xs: "center", md: "left" },
-                  }}
-                >
-                  Breathing is more than just an unconscious action—it's a
-                  foundation of health, performance, and emotional well-being.
-                  But what if your breathing habits are silently holding you
-                  back? Enter the CapnoTrainer® GO, the groundbreaking tool that
-                  merges science, psychology, and technology to revolutionize
-                  your breathing habits and transform your life.
-                </Typography>
-              </Box>
-            </Grid>
-
-            <Grid item xs={12} md={6}>
-              <Box
-                sx={{
-                  padding: { xs: "0", md: "1rem" },
-                  borderRadius: "8px",
-                  textAlign: "center",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <img
-                  src={Device}
-                  alt="CapnoTrainer Device"
-                  style={{
-                    width:'auto',
-                    maxWidth: "400px",
-                    height: {xs:'100%', sm:'340px', md:'380px'},
-                  }}
-                />
-              </Box>
-            </Grid>
+                Breathing is more than just an unconscious action—it's a
+                foundation of health, performance, and emotional well-being. But
+                what if your breathing habits are silently holding you back?
+                Enter the CapnoTrainer® GO, the groundbreaking tool that merges
+                science, psychology, and technology to revolutionize your
+                breathing habits and transform your life.
+              </Typography>
+            </Box>
           </Grid>
-        </Box>
+
+         
+          <Grid item xs={12} md={6}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: { xs: "center", md: "flex-start" },
+                p: 0
+              }}
+            >
+              <Box
+                component="img"
+                src={Device}
+                alt="CapnoTrainer Device"
+                sx={{
+                  width: { xs: "100%", sm: "80%", md: "85%" },          
+                  height: "auto",
+                  mt: 2,
+                
+                }}
+              />
+            </Box>
+          </Grid>
+        </Grid>
       </Box>
 
       <Box
@@ -144,7 +139,7 @@ const HeaderSection = () => {
           height: "110px",
         }}
       />
-    </Box>
+    </>
   );
 };
 

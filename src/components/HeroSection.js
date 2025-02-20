@@ -47,6 +47,8 @@ const HeroSection = () => {
               style={{
                 width: "426px",
                 height: "490px",
+                marginTop: "40px",
+                marginLeft: "50px",
               }}
             />
           </Grid>
@@ -64,6 +66,7 @@ const HeroSection = () => {
                   fontSize: { xs: "30px", sm: "55px", md: "60px" },
                   fontFamily: "'Spectral SC', serif",
                   textDecoration: "underline wavy #fff 2px",
+                  marginBottom: { xs: 2, sm: 2, md: 1 },
                 }}
               >
                 TAKE CONTROL OF YOUR <br /> BREATH TODAY!
@@ -104,21 +107,23 @@ const HeroSection = () => {
 
             <Box
               sx={{
-                width: { xs: "auto", md: "575px" },
-                height: {xs:'80px',sm:'110px',md:'120px'},
-                backgroundColor: "black",
+                width: { xs: "300px", sm: "550px", md: "600px" },
+                height: { xs: "90px", sm: "180px", md: "130px" },
+                backgroundColor: "#000",
                 display: "flex",
-                justifyContent:'center',
+                justifyContent: "center",
                 alignItems: "center",
-                marginLeft:{xs:'10px',sm:'30px',md:'350px'}
+                mx: { xs: "auto", sm: "auto", md: 0 }, // Centers for xs & sm, removes centering for md
+                marginLeft: { md: "350px" }, // Left margin only for md
+                marginTop: { xs: "10px", sm: "40px", md: "20px" },
               }}
             >
               <Button
                 variant="contained"
                 sx={{
-                  margin: { xs: 2, sm: 5, md: "10px" },
+                  margin: { xs: 3, sm: 5, md: 2 },
                   backgroundColor: "#fff",
-                  padding: {xs:'0px',sm:'15px', md:'10px'},
+                  padding: { xs: "5px", sm: "15px", md: "20px" },
                   fontWeight: 700,
                   fontSize: { xs: "10px", sm: "16px", md: "16px" },
                   color: "#008080",
